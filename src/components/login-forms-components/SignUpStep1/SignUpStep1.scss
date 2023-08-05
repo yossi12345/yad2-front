@@ -1,0 +1,15 @@
+.sign-up-title{
+    font-size: 24px;
+}
+.sign-up-person{
+    margin: 20px 0;
+    @media (min-width:880px) {
+        display: none;
+    }
+}
+// .forget-password{
+//     align-self: flex-end;
+//     font-weight: 500;
+//     color: $my-orange;
+//     font-size: 16px;
+// }

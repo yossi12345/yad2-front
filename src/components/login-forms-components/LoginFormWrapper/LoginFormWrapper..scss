@@ -1,0 +1,83 @@
+@use "src/variables.scss" as *;
+.login-form-wrapper-container{
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+  
+    p{
+        display: none;
+        font-size: 36px;
+        @media (min-width:880px) {
+            display: block;
+        }
+    }
+    .images-container{
+        display: none;
+        gap:5px;
+        flex-direction: row-reverse;
+        &>div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        @media (min-width:880px) {
+            display: flex;
+        }
+    }
+    .logo-container{
+        display: none;
+        position: absolute;
+        top: 30px;
+        @media (min-width:880px) {
+            display: block;
+        }
+    }
+    @media (max-width:880px) {
+        overflow:auto;
+        height: 100vh;
+    }
+    @media (min-width:880px) {
+        align-items: center;
+        flex-direction: row;
+        padding:130px 78px 144px;
+        background-color: #fff8ef;
+        justify-content: space-between;
+    }
+}
+.login-form-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+    @media (min-width:880px) {
+        padding: 35px;
+        box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
+        width: 39.1vw;
+        max-width: 481px;
+    }
+    .submit-button{
+        border-radius: 30px;
+        border-color:transparent ;
+        background-color: $my-orange;
+        width: 100%;
+        color: white;
+        height: 50px;
+        font-size: 20px;
+        cursor: pointer;
+        &:hover{
+            background-color: #d86000;
+        }
+    }
+}
+.back-arrow{
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    left: 20px;
+    top:30px;
+}
